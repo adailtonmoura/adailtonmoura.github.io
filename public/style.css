@@ -1,9 +1,87 @@
 *{
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body, html{
     height: 100vh;
     margin: 0px;
-    background-color: #1e1f26;
+}
+.app{
+    height: 100vh;
+    background: linear-gradient(90deg, #2C2F39 0%, #202229 55.21%);    
+    display: grid;
+    grid-template-rows:100px 1fr;
+    grid-template-columns: 350px 1fr;
+    grid-template-areas:
+    "nav nav" 
+    "sidebar content"
+}
+.app > .header{
+    grid-area: nav;
+    /* border-bottom:1px solid #FDFFFC; */
+}
+.sidebar{
+    margin-left: 60px;
+    grid-area: sidebar;    
+    /* background-color: rgb(255, 254, 254); */
+    display: grid;
+    grid-template-rows:200px 1fr;
+    grid-template-columns:1fr;
+    grid-template-areas:
+    "sidebar-header" 
+    "sidebar-content";
+    border-radius: 20px 20px 0px 0px;
+
+    /* border-right:1px solid #FDFFFC ; */
+}
+.sidebar > .sidebar-header{
+    grid-area: sidebar-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar > .sidebar-content{
+    grid-area: sidebar-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sidebar > .sidebar-content >  a{
+    text-decoration: none;
+    color: #b4b4b4;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.sidebar > .sidebar-header > .avatar {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+}
+.sidebar > .sidebar-header > .avatar .githubicon {
+    width: 64px;
+    height: 64px;
+    border-radius: 200px;
+}
+.name{
+    margin: 10px 0px 0px;
+    color: #b4b4b4;
+    font-size: 1.8rem;
+    
+}
+.description{
+    color: #b4b4b4;
+    margin: 0px;
+}
+
+.content{
+    grid-area: content;
 }
