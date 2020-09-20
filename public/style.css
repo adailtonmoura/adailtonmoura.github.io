@@ -9,7 +9,7 @@ body, html{
 }
 .app{
     height: 100vh;
-    background: linear-gradient(90deg, #2C2F39 0%, #202229 55.21%);    
+    background: white;    
     display: grid;
     grid-template-rows:100px 1fr;
     grid-template-columns: 350px 1fr;
@@ -51,7 +51,7 @@ body, html{
 }
 .sidebar > .sidebar-content >  a{
     text-decoration: none;
-    color: #b4b4b4;
+    color: #42b883;
     font-size: 1.5rem;
     margin: 5px;
 }
@@ -60,7 +60,7 @@ body, html{
     width: 70px;
     height: 70px;
     background-color: transparent;
-    border: 1px solid #FFD700;
+    border: 1px solid #42b883;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,12 +73,12 @@ body, html{
 }
 .name{
     margin: 10px 0px 0px;
-    color: #b4b4b4;
+    color: #42b883;
     font-size: 1.8rem;
     
 }
 .description{
-    color: #b4b4b4;
+    color: #42b883;
     margin: 0px;
 }
 
